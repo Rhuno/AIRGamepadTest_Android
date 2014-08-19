@@ -11,3 +11,5 @@ Just copy the com folder into the src directory for the FlashDevelop project.
 
 You will also need Adobe AIR installed on your Android Device. Shake the device to bring up the gamepad screen and copy the PIN 
 into the desktop app, click connect and you're good to go.
+
+Blog Post: http://rhuno.com/flashblog/2014/08/19/airgamepad-example/
