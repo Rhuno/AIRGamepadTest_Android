@@ -1,7 +1,7 @@
 AIRGamepadTest_Android
 ======================
 
-Demonstration of the AIRGamepad API
+Demonstration of the AIRGamepad API (video: https://www.youtube.com/watch?v=n_-B9ADlmcM)
 
 In order for this to work you will need to include the gamepad.swc file from the AIR 15 sdk (found in frameworks/libs/air). 
 Add this swc to the lib folder and right-click, Add To Library in FlashDevelop.
