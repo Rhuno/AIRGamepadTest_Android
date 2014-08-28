@@ -3,13 +3,11 @@ package
 	import com.adobe.air.gaming.AIRGamepad;
 	import com.adobe.air.gaming.AIRGamepadErrorEvent;
 	import com.adobe.air.gaming.AIRGamepadEvent;
-	import com.adobe.images.JPGEncoder;
 	import flash.display.Bitmap;
-	import flash.display.BitmapData;
+	import flash.display.JPEGEncoderOptions;
 	import flash.display.Sprite;
 	import flash.events.AccelerometerEvent;
 	import flash.events.Event;
-	import flash.geom.Matrix;
 	import flash.utils.ByteArray;
 	
 	/**
@@ -179,9 +177,7 @@ package
 			
 			var bmp:Bitmap 			= new _skin() as Bitmap;
 			var bytes:ByteArray		= new ByteArray();			
-			var encoder:JPGEncoder 	= new JPGEncoder(90);
-			bytes = encoder.encode(bmp.bitmapData);
-			
+			bmp.bitmapData.encode(bmp.getBounds(stage), new JPEGEncoderOptions(80) , bytes);
 			_gamepad.drawImage(bytes);	// draw skin graphic to the android device
 			
 			// start the game
